@@ -4,16 +4,16 @@
  * если месяца с таким номером не существует.
  */
 
-$n = rand(1, 13);
-echo $n.'</br>';
+$array = array(rand(1, 13));
+print_r($array).'</br>';
 
-if (($n == 1) || ($n == 2) || ($n == 12))  {
+if (in_array(1, $array) || in_array(2, $array) || in_array(12, $array))  {
   echo 'Winter';
-} elseif (($n == 3) || ($n == 4) || ($n == 5)){
+} elseif (in_array(3, $array) || in_array(4, $array) || in_array(5, $array)){
   echo 'Spring';
-} elseif (($n == 6) || ($n == 7) || ($n == 8)) {
+} elseif (in_array(6, $array) || in_array(7, $array) || in_array(8, $array)) {
   echo 'Summer';
-} elseif (($n == 9) || ($n == 10) || ($n == 11)){
+} elseif (in_array(9, $array) || in_array(10, $array) || in_array(11, $array)){
   echo 'Autumn';
 } else{
   echo 'Ошибка';

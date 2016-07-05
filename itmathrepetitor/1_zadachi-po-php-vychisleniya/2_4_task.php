@@ -8,7 +8,6 @@ echo $i.' '.$j.'</br>';
 
 if ($i > $j){
   echo $i;
-}
-elseif ($j > $i){
+} else{
   echo $j;
 }
