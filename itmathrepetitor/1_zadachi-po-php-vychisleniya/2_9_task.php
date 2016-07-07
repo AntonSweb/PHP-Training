@@ -9,9 +9,10 @@ echo $n.'</br>';
 $n = (string)$n;
 $mass = array($n[0], $n[1], $n[2]);
 rsort($mass);
-$n[0] = $mass[0];
-$n[1] = $mass[1];
-$n[2] = $mass[2];
+
+for($i = 0; $i < count($mass); $i++){
+  $n[$i] = $mass[$i];
+}
 echo $n;
 
 
